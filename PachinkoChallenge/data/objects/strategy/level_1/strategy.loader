@@ -1,0 +1,29 @@
+<loader>
+    <!-- This is the strategy creation order -->
+    <strategy name="_level_multi_" camera="level_camera">
+        <node name="strawberry" instance="strawberry" active="false"/>
+    </strategy>
+    <strategy name="_level_ball_" camera="level_camera"/>
+    <strategy name="_level_ui_" defaultGroup="(level_1)">
+        <node name="uiBackground" instance="uiBackground"/>
+        <node name="uiPlayerWinMeter" instance="uiPlayerWinMeter"/>
+        <node name="uiPlayerStrawberry" instance="uiPlayerStrawberry"/>
+        <node name="uiPlayerMultiText" instance="uiPlayerMultiText"/>
+        <node name="uiPlayerLevelText" instance="uiPlayerLevelText"/>
+        <node name="uiNextBallText"/>
+        <node name="uiGoalText" instance="uiGoalText"/>
+        <node name="uiGoalStrawberry" instance="uiGoalStrawberry"/>
+        <node name="uiGoalMulti" instance="uiGoalMulti"/>
+        <node name="uiTimerText" instance="uiTimerText"/>
+        <node name="square_red" instance="square_red" active="false"/>
+        <node name="square_blue" instance="square_blue" active="false"/>
+        <node name="square_green" instance="square_green" active="false"/>
+        <node name="triangle_red" instance="triangle_red" active="false"/>
+        <node name="triangle_blue" instance="triangle_blue" active="false"/>
+        <node name="triangle_green" instance="triangle_green" active="false"/>
+        <node name="circle_red" instance="circle_red" active="false"/>
+        <node name="circle_blue" instance="circle_blue" active="false"/>
+        <node name="circle_green" instance="circle_green" active="false"/>
+    </strategy>
+  
+</loader>

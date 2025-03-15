@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<objectDataList2D>
+
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+    <default>
+        <visual>
+            <mesh genType="quad"/>
+            <color r="1" g="1" b="1" a="1"/>
+            <pipeline id="2d_quad"/>
+        </visual>
+    </default>
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+
+    <objectList>
+
+        <object name="logo">
+            <visual>
+                <pipeline id="2d_quad"/>
+                <texture file="data/textures/startup/logo.png"/>
+            </visual>
+        </object>
+
+        <object name="solid_white_bk">
+            <visual>
+                <pipeline id="2d_solid"/>
+            </visual>
+            <size width="1080" height="1920"/>
+        </object>
+
+    </objectList>
+
+</objectDataList2D>
+

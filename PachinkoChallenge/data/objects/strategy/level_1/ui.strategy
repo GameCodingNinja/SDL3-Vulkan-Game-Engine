@@ -1,0 +1,201 @@
+<strategy defaultGroup="(level_1)">
+
+    <node name="uiBackground">
+        <sprite>
+            <position x="0" y="-890" z="0"/>
+        </sprite>
+    </node>
+    
+    <node name="uiPlayerWinMeter">
+        <uiMeter name="win_meter" controlType="meter" defaultState="inactive">
+            <filePath file="data/objects/strategy/level_1/win_meter.ctrl"/>
+            <position x="-300" y="-870" z="0"/>
+            <!-- Max size of font string in meter -->
+            <size width="390" height="70"/>
+            <!-- <meterScript onInit="Meter_OnInit" onStart="Meter_OnStart" onStop="Meter_OnStop" onClear="Meter_OnClear"/> -->
+            <bangRange fastBangTime="500" scaleType="axis">
+                <range target="500" bangUpType="rampUp" velocity="15.0"  estimatedTime="200" slowStartTime="100"/>
+                <range target="1000" bangUpType="rampUp" velocity="15.0"  estimatedTime="500" slowStartTime="200"/>
+                <range target="10000" bangUpType="rampUp" velocity="15.0"  estimatedTime="2000" slowStartTime="500"/>
+                <range target="100000" bangUpType="rampUp" velocity="15.0"  estimatedTime="3000" slowStartTime="500"/>
+                <range target="1000000" bangUpType="rampUp" velocity="15.0"  estimatedTime="4000" slowStartTime="500"/>
+            </bangRange>
+        </uiMeter>
+    </node>
+
+    <node name="uiPlayerStrawberry">
+        
+        <sprite objectName="strawberry">
+            <position x="-470" y="-930" z="0"/>
+            <scale x="0.4" y="0.4" z="0.4"/>
+        </sprite>
+
+    </node>
+
+    <node name="uiPlayerMultiText">
+        
+        <sprite objectName="level_font">
+            <position x="-440" y="-930" z="0"/>
+            <font fontName="dejavu_sans_bold_45" fontString="1">
+                <alignment horzAlign="left"/>
+            </font>
+            <scriptList>
+                <script inc_flash="Level_MultiIncFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+    <node name="uiPlayerLevelText">
+        
+        <sprite objectName="level_font">
+            <position x="-100" y="-930" z="0"/>
+            <font fontName="dejavu_sans_bold_45" fontString="Level 1">
+                <alignment horzAlign="right"/>
+            </font>
+            <scriptList>
+                <script reset_flash="Level_TimeResetFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+    <node name="uiTimerText">
+        
+        <sprite objectName="level_font">
+            <position x="110" y="-860" z="0"/>
+            <scale x="1.5" y="1.5" z="1.5"/>
+            <font fontName="dejavu_sans_bold_70" fontString="00:00"/>
+            <scriptList>
+                <script reset_flash="Level_TimeResetFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+    <node name="uiGoalText">
+        
+        <sprite objectName="level_font">
+            <position x="-30" y="-930" z="0"/>
+            <scale x="1" y="1" z="1"/>
+            <font fontName="dejavu_sans_reg_40" fontString="Goal">
+                <alignment horzAlign="left"/>
+            </font>
+        </sprite>
+
+    </node>
+
+    <node name="uiGoalStrawberry">
+        
+        <sprite objectName="strawberry">
+            <position x="70" y="-930" z="0"/>
+            <scale x="0.4" y="0.4" z="0.4"/>
+        </sprite>
+
+    </node>
+
+    <node name="uiGoalMulti">
+        
+        <sprite objectName="level_font">
+            <position x="100" y="-930" z="0"/>
+            <font fontName="dejavu_sans_bold_45" fontString="0">
+                <alignment horzAlign="left"/>
+            </font>
+            <scriptList>
+                <script reset_flash="Level_TimeResetFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+    <node name="uiNextBallText">
+        
+        <sprite objectName="level_font">
+            <position x="400" y="-927" z="0"/>
+            <font fontName="dejavu_sans_reg_40" fontString="Next Ball"/>
+        </sprite>
+
+    </node>
+
+    <node name="square_red">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="square_green">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="square_blue">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="triangle_red">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="triangle_green">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="triangle_blue">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="circle_red">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="circle_green">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+    <node name="circle_blue">
+        
+        <sprite>
+            <position x="400" y="-870" z="0"/>
+            <scale x="0.7" y="0.7" z="0.7"/>
+        </sprite>
+
+    </node>
+
+</strategy>

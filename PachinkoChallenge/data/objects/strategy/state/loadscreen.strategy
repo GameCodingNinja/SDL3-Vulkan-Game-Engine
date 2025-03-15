@@ -1,0 +1,14 @@
+<strategy>
+    
+    <node name="loadAnim" defaultGroup="(load)">
+        
+        <sprite>
+            <dynamicOffset right="150" bottom="150"/>
+            <scriptList>
+                <script loadAnimationLoop="State_LoopAnimation" group="(main)" prepareOnInit="true"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+</strategy>

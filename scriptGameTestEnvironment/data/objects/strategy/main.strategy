@@ -1,0 +1,166 @@
+<strategy defaultGroup="(main)">
+
+    <node name="multiListTestNode">
+
+        <object>
+            <position x="400" y="-200" z="0"/>
+            <!--<scale x=".5" y=".5" z="1"/>-->
+        </object>
+
+        <node>
+
+            <sprite objectName="logo">
+                <position x="0" y="0" z="0"/>
+            </sprite>
+
+            <node>
+
+                <sprite objectName="square_red">
+                    <position x="-150" y="150" z="0"/>
+                </sprite>
+
+                <node>
+
+                    <sprite objectName="circle_red">
+                        <position x="0" y="80" z="0"/>
+                    </sprite>
+
+                    <node>
+
+                        <sprite objectName="triangle_red">
+                            <position x="0" y="70" z="0"/>
+                        </sprite>
+
+                    </node>
+
+                </node>
+
+            </node>
+
+            <node>
+
+                <sprite objectName="square_green">
+                    <position x="0" y="150" z="0"/>
+                </sprite>
+
+                <node>
+
+                    <sprite objectName="circle_green">
+                        <position x="0" y="80" z="0"/>
+                    </sprite>
+
+                    <node>
+
+                        <sprite objectName="triangle_green">
+                            <position x="0" y="70" z="0"/>
+                        </sprite>
+
+                    </node>
+
+                </node>
+
+            </node>
+
+            <node>
+
+                <sprite objectName="square_blue">
+                    <position x="150" y="150" z="0"/>
+                </sprite>
+
+                <node>
+
+                    <sprite objectName="circle_blue">
+                        <position x="0" y="80" z="0"/>
+                    </sprite>
+
+                    <node>
+
+                        <sprite objectName="triangle_blue">
+                            <position x="0" y="70" z="0"/>
+                        </sprite>
+
+                    </node>
+
+                </node>
+
+            </node>
+
+        </node>
+
+    </node>
+
+    <node name="player_ship">
+
+        <object>
+            <position x="-400" y="200" z="0"/>
+            <scale x="1.5" y="1.5" z="1.5"/>
+        </object>
+
+        <node name="fire_tail">
+
+            <sprite visible="true">
+                <position x="-120" y="-3" z="0"/>
+                <scriptList>
+                    <script animate="loopAnimation" prepareOnInit="true" />
+                </scriptList>
+            </sprite>
+
+        </node>
+
+        <node name="ship_body">
+
+            <sprite objectName="player_ship">
+            </sprite>
+
+        </node>
+
+        <node name="ship_gun">
+
+            <sprite objectName="ship_gun">
+                <centerPos x="10" y="0" z="0"/>
+                <position x="20" y="0" z="0"/>
+                <scriptList>
+                    <script rotate="rotateGun" prepareOnInit="true" />
+                </scriptList>
+            </sprite>
+
+        </node>
+
+    </node>
+
+    <node name="projectile">
+
+        <sprite objectName="projectile">
+            <position x="0" y="0" z="0"/>
+            <scriptList>
+                <script move="MoveProjectile"/>
+            </scriptList>
+        </sprite>
+
+    </node>
+
+    <node name="shapes">
+
+        <sprite objectName="square_green">
+            <position x="-500" y="-400" z="0"/>
+        </sprite>
+
+        <node>
+
+            <sprite objectName="triangle_red">
+                <position x="0" y="70" z="0"/>
+            </sprite>
+
+            <node>
+
+                <sprite objectName="circle_blue">
+                    <position x="0" y="90" z="0"/>
+                </sprite>
+
+            </node>
+
+        </node>
+
+    </node>
+
+</strategy>

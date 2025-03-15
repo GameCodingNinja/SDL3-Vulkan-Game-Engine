@@ -1,0 +1,9 @@
+<loader>
+
+    <strategy name="_load_" activate="true">
+    
+        <node name="loadAnim"/>
+
+    </strategy>
+  
+</loader>

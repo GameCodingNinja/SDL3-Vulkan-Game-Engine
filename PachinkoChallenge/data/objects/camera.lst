@@ -1,0 +1,16 @@
+<cameraList>
+    
+    <default projectType="orthographic" minZDist="5" maxZDist="1000" view_angle="45.0">
+        <position x="0" y="0" z="100"/>
+    </default>
+
+    <camera id="title_anim_camera" projectType="orthographic" minZDist="5" maxZDist="1000" view_angle="45.0">
+        <position x="0" y="-30" z="100"/>
+    </camera>
+
+    <camera id="level_camera" projectType="orthographic" minZDist="5" maxZDist="1000" view_angle="45.0">
+        <position x="0" y="0" z="100"/>
+        <scale x="0.6" y="0.6" z="0.6"/>
+    </camera>
+  
+</cameraList>

@@ -1,0 +1,40 @@
+<loader>
+
+    <!-- One off Strategy node creation. Bypasses the need to create a strategy file -->
+    <strategy name="_title_background_">
+    
+        <node group="(title)" name="background">
+            <sprite>
+                <rotation z="90"/>
+            </sprite>
+        </node>
+
+    </strategy>
+
+    <!-- One off Strategy node creation. Bypasses the need to create a strategy file -->
+    <strategy name="_title_actor_" defaultGroup="(title)" camera="title_anim_camera">
+
+        <node name="circle_blue"/>
+        <node name="circle_green"/>
+        <node name="circle_red"/>
+        <node name="triangle_green"/>
+        <node name="triangle_blue"/>
+        <node name="triangle_red"/>
+        <node name="square_green"/>
+        <node name="square_blue"/>
+        <node name="square_red"/>
+
+    </strategy>
+
+    <!-- One off Strategy node creation. Bypasses the need to create a strategy file -->
+    <strategy name="_title_text_">
+
+        <node group="(title)" name="title">
+            <sprite>
+                <position x="0" y="-700" z="0"/>
+            </sprite>
+        </node>
+
+    </strategy>
+  
+</loader>

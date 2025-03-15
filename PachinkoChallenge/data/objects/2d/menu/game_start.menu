@@ -1,0 +1,48 @@
+<menu>
+    
+    <!-- Supports transIn, transOut, event -->
+    <scriptList>
+        <script transIn="Menu_TransIn"/>
+        <script transOut="Menu_TransOut"/>
+    </scriptList>
+
+    <staticMenuControls>
+
+        <!-- Message Label -->
+        <control name="message_lbl" controlType="label" defaultState="inactive">
+            <filePath file="data/objects/2d/menu/control/game_start_label.ctrl"/>
+            <position x="0" y="-50" z="0"/>
+            <fontStringList>
+                <string text="Touch anywhere on the|screen where you want|the ball to drop."/>
+            </fontStringList>
+        </control>
+
+    </staticMenuControls>
+  
+    <menuControls>
+      
+        <control name="start_btn" controlType="button" defaultState="inactive">
+            <filePath file="data/objects/2d/menu/control/button_200x75.ctrl"/>
+            <position x="0" y="150" z="0"/>
+            <fontStringList>
+                <string text="Start"/>
+            </fontStringList>
+            <!-- Supports to_idle, to_tree, to_menu, back, close, change_focus, game_state_change, quit_game -->
+            <action actionType="back"/>
+            <!-- Supports transIn, transOut, disabled, inactive, active, select, change, execute & event -->
+            <scriptList>
+                <script active="Control_OnActive"/>
+                <script select="Control_OnSelect"/>
+            </scriptList>
+        </control>
+
+    </menuControls>
+
+    <spriteList>
+
+        <sprite objectName="game_start_menu_bg"/>
+    
+    </spriteList>
+  
+</menu>
+

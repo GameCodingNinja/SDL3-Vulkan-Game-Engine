@@ -1,0 +1,9 @@
+<strategy defaultGroup="(level_1)" defaultId="-3">
+
+    <node name="strawberry">
+        
+        <sprite/>
+
+    </node>
+
+</strategy>

@@ -1,0 +1,19 @@
+<strategy>
+
+    <node name="logo" defaultGroup="(startup)">
+        
+        <sprite>
+            <position x="0" y="0" z="0"/>
+        </sprite>
+
+    </node>
+
+    <node name="solid_white_bk" defaultGroup="(startup)">
+        
+        <sprite>
+            <position x="0" y="0" z="0"/>
+        </sprite>
+
+    </node>
+
+</strategy>

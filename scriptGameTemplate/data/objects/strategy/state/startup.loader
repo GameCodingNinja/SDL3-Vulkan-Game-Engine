@@ -1,0 +1,9 @@
+<loader>
+
+    <strategy name="_startup_" defaultGroup="(startup)" cmdBufPool="(startup)" activate="true">
+    
+        <node name="waffles"/>
+
+    </strategy>
+  
+</loader>

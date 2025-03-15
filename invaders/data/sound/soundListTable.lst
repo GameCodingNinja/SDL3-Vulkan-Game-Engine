@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<listTable>
+
+  <groupList groupName="(menu)">
+    <file path="data/sound/menuSound.lst"/>
+  </groupList>
+  
+  <!--<groupList groupName="(effects)">
+    <file path="data/sound/effectsSound.lst"/>
+  </groupList>-->
+  
+</listTable>

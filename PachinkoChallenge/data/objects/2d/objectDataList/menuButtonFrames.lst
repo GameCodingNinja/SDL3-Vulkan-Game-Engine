@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<objectDataList2D>
+    
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+    <default>
+        <visual>
+            <mesh genType="scaled_frame">
+                <scaledFrame thicknessWidth="5" thicknessHeight="5" centerQuad="false"/>
+            </mesh>
+            <color r="64" g="125" b="192" a="1"/>
+            <pipeline id="2d_quad"/>
+        </visual>
+    </default>
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+  
+    <objectList>
+
+        <object name="345x75_button_frame">
+            <visual>
+                <texture file="data/textures/menu/16x16_4_pixel_frame.png"/>
+            </visual>
+            <size width="345" height="75"/>
+        </object>
+
+        <object name="235x85_button_frame">
+            <visual>
+                <texture file="data/textures/menu/16x16_5_pixel_frame.png"/>
+                <mesh genType="scaled_frame">
+                    <scaledFrame thicknessWidth="7" thicknessHeight="7" centerQuad="false"/>
+                </mesh>
+            </visual>
+            <size width="235" height="85"/>
+        </object>
+
+        <object name="200x75_button_frame">
+            <visual>
+                <texture file="data/textures/menu/16x16_4_pixel_frame.png"/>
+            </visual>
+            <size width="200" height="75"/>
+        </object>
+
+        <object name="150x75_button_frame">
+            <visual>
+                <texture file="data/textures/menu/16x16_4_pixel_frame.png"/>
+            </visual>
+            <size width="150" height="75"/>
+        </object>
+
+    </objectList>
+
+</objectDataList2D>
+

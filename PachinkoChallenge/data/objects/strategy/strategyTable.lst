@@ -1,0 +1,35 @@
+<listTable>
+
+    <groupList groupName="_startup_">
+        <file path="data/objects/strategy/state/startup.strategy"/>
+    </groupList>
+
+    <groupList groupName="_title_stage_">
+        <file path="data/objects/strategy/state/titlescreen.stage.strategy"/>
+    </groupList>
+
+    <groupList groupName="_title_actor_">
+        <file path="data/objects/strategy/state/titlescreen.ball.strategy"/>
+    </groupList>
+
+    <groupList groupName="_load_">
+        <file path="data/objects/strategy/state/loadscreen.strategy"/>
+    </groupList>
+
+    <groupList groupName="_level_stage_">
+        <file path="data/objects/strategy/level_1/stage.strategy"/>
+    </groupList>
+    
+    <groupList groupName="_level_ball_">
+        <file path="data/objects/strategy/level_1/ball.strategy"/>
+    </groupList>
+
+    <groupList groupName="_level_multi_">
+        <file path="data/objects/strategy/level_1/multi.strategy"/>
+    </groupList>
+
+    <groupList groupName="_level_ui_">
+        <file path="data/objects/strategy/level_1/ui.strategy"/>
+    </groupList>
+  
+</listTable>

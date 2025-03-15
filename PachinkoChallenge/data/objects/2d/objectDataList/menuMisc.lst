@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<objectDataList2D>
+
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+    <default>
+        <visual>
+            <mesh genType="quad"/>
+            <color r="64" g="125" b="192" a="1"/>
+            <pipeline id="2d_quad"/>
+        </visual>
+    </default>
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+  
+    <objectList>
+
+        <object name="345x75_button_solid">
+            <visual>
+                <pipeline id="2d_solid"/>
+                <color r="25" g="54" b="84" a="0.8"/>
+            </visual>
+            <size width="341" height="71"/>
+        </object>
+
+        <object name="235x85_button_solid">
+            <visual>
+                <pipeline id="2d_solid"/>
+                <color r="25" g="54" b="84" a="0.8"/>
+            </visual>
+            <size width="231" height="81"/>
+        </object>
+
+        <object name="200x75_button_solid">
+            <visual>
+                <pipeline id="2d_solid"/>
+                <color r="25" g="54" b="84" a="0.8"/>
+            </visual>
+            <size width="196" height="71"/>
+        </object>
+
+        <object name="150x75_button_solid">
+            <visual>
+                <pipeline id="2d_solid"/>
+                <color r="25" g="54" b="84" a="0.8"/>
+            </visual>
+            <size width="146" height="71"/>
+        </object>
+
+        <object name="control_font">
+            <visual>
+                <mesh genType="font"/>
+            </visual>
+        </object>
+
+        <object name="label_font">
+            <visual>
+                <mesh genType="font"/>
+            </visual>
+        </object>
+
+    </objectList>
+
+</objectDataList2D>
+

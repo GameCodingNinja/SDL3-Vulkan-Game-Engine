@@ -1,0 +1,24 @@
+<UIControl>
+
+    <spriteList>
+
+        <sprite objectName="meter_frame">
+            <scriptList>
+                <script inc_flash="Level_MultiIncFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+        <!-- The last font sprite is the one used to display the meter value -->
+        <sprite objectName="meter_font">
+            <position x="0" y="-1" z="0"/>
+            <font fontName="dejavu_sans_cond_60">
+                <attributes kerning="-2"/>
+            </font>
+            <scriptList>
+                <script inc_flash="Level_MultiIncFlash" group="(main)"/>
+            </scriptList>
+        </sprite>
+
+    </spriteList>
+
+</UIControl>

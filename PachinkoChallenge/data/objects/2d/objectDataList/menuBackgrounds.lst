@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<objectDataList2D>
+
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+    <default name="">
+        <visual>
+            <texture file="data/textures/menu/menu_bg.png"/>
+            <mesh genType="scaled_frame">
+                <scaledFrame thicknessWidth="30" thicknessHeight="30"/>
+            </mesh>
+            <color r="48" g="97" b="153" a="217"/>
+            <pipeline id="2d_quad"/>
+        </visual>
+    </default>
+    <!-- DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT DEFAULT -->
+  
+    <objectList>
+
+        <object name="pause_menu_bg">
+            <size width="400" height="400"/>
+        </object>
+        
+        <object name="confirmation_menu_bg">
+            <size width="750" height="450"/>
+        </object>
+
+        <object name="game_start_menu_bg">
+            <size width="750" height="450"/>
+        </object>
+
+    </objectList>
+
+</objectDataList2D>
+

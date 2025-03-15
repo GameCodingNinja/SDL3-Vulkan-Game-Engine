@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Library",
+            "includePath": [
+                "${workspaceFolder}/",
+                "${workspaceFolder}/../angelscript/include/",
+                "${workspaceFolder}/../angelscript/add_on/",
+                "${workspaceFolder}/../",
+                "${workspaceFolder}/../bulletPhysics/src"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": ""
+        }
+    ],
+    "version": 4
+}
