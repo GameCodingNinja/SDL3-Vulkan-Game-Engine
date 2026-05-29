@@ -18,7 +18,6 @@
 #include <2d/visualcomponentnull.h>
 #include <3d/visualcomponent3d.h>
 #include <physics/physicscomponent2d.h>
-#include <physics/physicscomponent3d.h>
 #include <utilities/xmlParser.h>
 #include <utilities/matrix.h>
 #include <utilities/xmlparsehelper.h>
@@ -56,10 +55,6 @@ CSprite::CSprite( const iObjectData & objectData ) :
         // Create the visual component
         if( objectData.getVisualData().isActive() )
             m_upVisualComponent.reset( new CVisualComponent3D( objectData ) );
-
-        // Create the physics component
-        if( objectData.getPhysicsData().isActive() )
-            m_upPhysicsComponent.reset( new CPhysicsComponent3D( objectData ) );
     }
 
     // If there's no visual data, set the hide flag

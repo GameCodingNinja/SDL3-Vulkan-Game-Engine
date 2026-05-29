@@ -18,7 +18,6 @@ find_package(Vulkan REQUIRED)
 
 # Create library specific path variables
 get_filename_component(PARENT_SOURCE_DIR ${PROJECT_SOURCE_DIR} DIRECTORY)
-set(bulletPhysics_SOURCE_DIR ${PARENT_SOURCE_DIR}/bulletPhysics)
 set(Box2D_SOURCE_DIR ${PARENT_SOURCE_DIR}/Box2D)
 set(angelscript_SOURCE_DIR ${PARENT_SOURCE_DIR}/angelscript)
 set(library_SOURCE_DIR ${PARENT_SOURCE_DIR}/library)
@@ -32,14 +31,6 @@ ExternalProject_Add(
     BINARY_DIR ${library_SOURCE_DIR}/build
     INSTALL_COMMAND ${CMAKE_COMMAND} -E echo "Skipping install step."
     BUILD_ALWAYS 1
-)
-
-# Add the external project Bullet Physics.
-ExternalProject_Add(
-    bulletPhysics
-    SOURCE_DIR ${bulletPhysics_SOURCE_DIR}
-    BINARY_DIR ${bulletPhysics_SOURCE_DIR}/build
-    INSTALL_COMMAND ${CMAKE_COMMAND} -E echo "Skipping install step."
 )
 
 # Add the external project Box2D.
@@ -80,7 +71,6 @@ endif()
 
 # Append external libraries and includes. Libs need to be listed in order of dependency for some reason
 list(APPEND EXTRA_LIBS ${library_SOURCE_DIR}/build/${CMAKE_STATIC_LIBRARY_PREFIX}library${CMAKE_STATIC_LIBRARY_SUFFIX})
-list(APPEND EXTRA_LIBS ${bulletPhysics_SOURCE_DIR}/build/${CMAKE_STATIC_LIBRARY_PREFIX}bulletPhysics${CMAKE_STATIC_LIBRARY_SUFFIX})
 list(APPEND EXTRA_LIBS ${Box2D_SOURCE_DIR}/build/${CMAKE_STATIC_LIBRARY_PREFIX}Box2D${CMAKE_STATIC_LIBRARY_SUFFIX})
 list(APPEND EXTRA_LIBS ${angelscript_SOURCE_DIR}/build/${CMAKE_STATIC_LIBRARY_PREFIX}angelscript${CMAKE_STATIC_LIBRARY_SUFFIX})
 list(APPEND EXTRA_LIBS ${Vulkan_LIBRARY})
@@ -92,7 +82,6 @@ list(APPEND EXTRA_INCLUDES ${Boost_INCLUDE_DIRS})
 list(APPEND EXTRA_INCLUDES ${library_SOURCE_DIR})
 list(APPEND EXTRA_INCLUDES ${angelscript_SOURCE_DIR}/include)
 list(APPEND EXTRA_INCLUDES ${angelscript_SOURCE_DIR}/add_on)
-list(APPEND EXTRA_INCLUDES ${bulletPhysics_SOURCE_DIR}/src)
 
 # Target all the libraries
 target_link_libraries(

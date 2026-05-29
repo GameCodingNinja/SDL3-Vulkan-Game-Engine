@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/../library",
-                "${workspaceFolder}/../angelscript/**"
+                "${workspaceFolder}/../angelscript/**",
+                "/usr/include/SDL3"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

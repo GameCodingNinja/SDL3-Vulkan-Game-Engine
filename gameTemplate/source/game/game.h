@@ -8,6 +8,7 @@
 #pragma once
 
 // Standard lib dependencies
+#include <cstdint>
 #include <memory>
 
 // Forward declaration(s)

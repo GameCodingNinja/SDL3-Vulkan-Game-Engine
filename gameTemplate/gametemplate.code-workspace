@@ -11,9 +11,6 @@
         },
         {
             "path": "../Box2D"
-        },
-        {
-            "path": "/usr/include/SDL3"
         }
     ],
 	"settings": {
